@@ -1,9 +1,8 @@
 class MultiDelogo < Formula
   desc "Detect and remove logos from videos"
   homepage "https://github.com/wernerturing/multi-delogo"
-  url "https://github.com/wernerturing/multi-delogo.git",
-      :branch => "opencv4"
-  version "2.3.0"
+  url "https://github.com/wernerturing/multi-delogo.git"
+  version "2.4.0"
   sha256 "80ff11873ec0e73d9e38b0eb2ffb1586621f0b804093b990e49fdb546476ed6e"
 
   depends_on "autoconf" => :build
