@@ -3,6 +3,7 @@ class MultiDelogo < Formula
   homepage "https://github.com/wernerturing/multi-delogo"
   url "https://github.com/wernerturing/multi-delogo.git"
   version "2.4.0"
+  license "GPL-3.0-or-later"
   sha256 "80ff11873ec0e73d9e38b0eb2ffb1586621f0b804093b990e49fdb546476ed6e"
 
   depends_on "autoconf" => :build
@@ -19,9 +20,8 @@ class MultiDelogo < Formula
 
   def install
     system "./autogen.sh"
-    system "./configure", "--disable-dependency-tracking",
-                          "--disable-silent-rules",
-                          "--prefix=#{prefix}"
+    system "./configure", "--disable-silent-rules",
+                          *std_configure_args
     system "make", "install"
   end
 
