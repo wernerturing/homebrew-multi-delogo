@@ -19,8 +19,11 @@ class MultiDelogo < Formula
   depends_on "opencv"
 
   def install
+    boost = Formula["boost"]
+
     system "./autogen.sh"
     system "./configure", "--disable-silent-rules",
+                          "--with-boost-libdir=#{boost.opt_lib}",
                           *std_configure_args
     system "make", "install"
   end
