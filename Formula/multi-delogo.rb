@@ -1,10 +1,10 @@
 class MultiDelogo < Formula
   desc "Detect and remove logos from videos"
   homepage "https://github.com/wernerturing/multi-delogo"
-  url "https://github.com/wernerturing/multi-delogo/releases/download/v2.4.0/multi-delogo-2.4.0.tar.xz"
-  sha256 "9ed1c4b20f3f071a223dd8974c5ffd367c8f2bf6548ee89baa9baea4ddeab274"
+  url "https://github.com/wernerturing/multi-delogo/releases/download/v2.5.0/multi-delogo-2.5.0.tar.xz"
+  sha256 "2fe97c4c17ad90bad27133b925df4aafebb8175167e3fee9a26d93148d538d87"
   head "https://github.com/wernerturing/multi-delogo.git"
-  version "2.4.0"
+  version "2.5.0"
   license "GPL-3.0-or-later"
 
   depends_on "autoconf" => :build
