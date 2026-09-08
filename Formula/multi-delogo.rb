@@ -15,9 +15,11 @@ class MultiDelogo < Formula
   depends_on "ffmpeg"
   depends_on "gettext"
   depends_on "glibmm"
-  depends_on "goocanvas"
   depends_on "gtkmm3"
   depends_on "opencv"
+
+  # goocanvas was dropped after 2.5.0; the stable release still needs it
+  depends_on "goocanvas" if build.stable?
 
   def install
     boost = Formula["boost"]
