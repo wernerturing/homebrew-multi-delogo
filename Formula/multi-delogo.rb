@@ -1,10 +1,10 @@
 class MultiDelogo < Formula
   desc "Detect and remove logos from videos"
   homepage "https://github.com/wernerturing/multi-delogo"
-  url "https://github.com/wernerturing/multi-delogo/releases/download/v2.5.0/multi-delogo-2.5.0.tar.xz"
-  sha256 "2fe97c4c17ad90bad27133b925df4aafebb8175167e3fee9a26d93148d538d87"
+  url "https://github.com/wernerturing/multi-delogo/releases/download/v2.6.0/multi-delogo-2.6.0.tar.xz"
+  sha256 "cb014e9e1747ad9a355744472886cb77dd4ba94a44c41236ba13e7ca56caf5f1"
   head "https://github.com/wernerturing/multi-delogo.git"
-  version "2.5.0"
+  version "2.6.0"
   license "GPL-3.0-or-later"
 
   depends_on "autoconf" => :build
@@ -14,12 +14,9 @@ class MultiDelogo < Formula
   depends_on "adwaita-icon-theme"
   depends_on "ffmpeg"
   depends_on "gettext"
-  depends_on "glibmm"
+  depends_on "glibmm@2.66"
   depends_on "gtkmm3"
-  depends_on "opencv"
-
-  # goocanvas was dropped after 2.5.0; the stable release still needs it
-  depends_on "goocanvas" if build.stable?
+  depends_on "opencv@4"
 
   def install
     boost = Formula["boost"]
