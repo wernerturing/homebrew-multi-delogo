@@ -14,8 +14,8 @@ class MultiDelogo < Formula
   depends_on "adwaita-icon-theme"
   depends_on "ffmpeg"
   depends_on "gettext"
-  depends_on "glibmm@2.66"
-  depends_on "gtkmm3"
+  depends_on "glibmm@2.90"
+  depends_on "gtkmm4"
   depends_on "opencv@4"
 
   def install
